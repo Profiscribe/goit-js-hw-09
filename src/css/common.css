@@ -17,7 +17,7 @@ img {
   max-width: 100%;
 }
 
-/* .timer {
+.timer {
   display: flex;
 }
 
@@ -36,4 +36,4 @@ img {
 .label {
   font-weight: bold;
   text-transform: uppercase;
-} */
+}
