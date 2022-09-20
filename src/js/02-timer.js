@@ -69,7 +69,6 @@ btnStart.addEventListener('click', () => {
       //  hours.textContent = addLeadingZero(timeObject.hours);
       //  minutes.textContent = addLeadingZero(timeObject.minutes);
       //  seconds.textContent = addLeadingZero(timeObject.seconds);
-
       
       if (countdown <= 10000) {
         timerHtml.style.color = 'tomato';

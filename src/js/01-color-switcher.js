@@ -7,17 +7,31 @@ function getRandomHexColor() {
 btnstop.disabled = true;
 btnstart.addEventListener('click', onStart);
 let timerId;
-function onStart(event) {
-    btnstart.disabled = true;
+
+function doDisabledStart () {
+  btnstart.disabled = true;
     btnstop.disabled = false;
+}
+
+function onStart(event) {
+    // btnstart.disabled = true;
+    // btnstop.disabled = false;
+     doDisabledStart ()
     timerId = setInterval(() => {
         const bodyColor = getRandomHexColor();
         document.body.style.background = bodyColor;
     }, 1000);
 }
 btnstop.addEventListener('click', onStop);
-function onStop() {
+
+function doDisabledStop () {
   btnstart.disabled = false;
   btnstop.disabled = true;
+}
+
+function onStop() {
+  // btnstart.disabled = false;
+  // btnstop.disabled = true;
+   doDisabledStop()
   clearInterval(timerId);
 }
